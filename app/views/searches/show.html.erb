@@ -1,0 +1,11 @@
+<h1><%= @search.query %></h1>
+<p>Here are some <%= @search.scope %> related to your search:</p>
+<ul>
+  <% @search.result["results"].each do |name| %>
+    <li><%= name %></li>
+  <% end %>
+</ul>
+
+<div class="mt-3">
+  <%= link_to 'New Search', new_search_path, class: 'btn btn-primary' %>
+</div>
