@@ -42,7 +42,7 @@ class ClassifySearchQueryService
       if result == expected_result
         puts "Test passed for query: '#{query}'"
       else
-        raise 
+        raise
         puts "Test failed for query: '#{query}'. Expected: '#{expected_result}', Got: '#{result}'"
       end
     end
