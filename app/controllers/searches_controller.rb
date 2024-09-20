@@ -7,7 +7,7 @@ class SearchesController < ApplicationController
     @search = Search.new(search_params)
     @search.save
 
-    # @search.update(scope: ClassifySearchQueryService.new(@search.query, search_id: @search.id).call)
+    @search.update(scope: ClassifySearchQueryService.new(@search.query, search_id: @search.id).call)
 
     if @search.save
       @search.update(result: SearchResultsService.new(@search.query, @search.scope, search_id: @search.id).call)

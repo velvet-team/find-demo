@@ -9,6 +9,11 @@ class SearchResultsService
   end
 
   def call
+    @client.add_headers(
+      "velvet-metadata-service": "SearchResultsService",
+      "velvet-metadata-search-id": @search_id.to_s
+    )
+
     response = @client.chat(
       parameters: {
         model: "gpt-4o",
