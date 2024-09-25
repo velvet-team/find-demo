@@ -1,5 +1,7 @@
 # Find Demo
 
+[**🎥 Watch the video demo about this repo**](https://www.youtube.com/watch?v=KaFkRi5ESi8)
+
 This is a demo of how to use Velvet with OpenAI, built with Ruby on Rails.
 
 It's a fairly vanilla Ruby on Rails application, so [set up Ruby and Postgres on your system](https://guides.rubyonrails.org/getting_started.html), add the `.env` file (below), install dependencies with `bundle install`, and run the server with `bin/dev`.
